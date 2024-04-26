@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* App.css */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 10px 0;
+  width: 100vw;
+  position: fixed; /* Fix the navbar position */
+  top: 0; /* Stick the navbar to the top */
+  left: 0;
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.nav-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 120px;
+}
+
+.nav-button:hover {
+  background-color: #ffffff;
+}
+
+
+body {
+  padding-top: 50px;
+  margin: 0; 
+}
+
+.section:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate background color for even sections */
+}
+
+.section:nth-child(odd) {
+  background-color: #ffffff; /* Alternate background color for odd sections */
+}
+
+.section {
+  width: 100%; /* Set the width to 100% */
+  padding: 20px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Calendar.css */
+.calendar-container {
+  margin: 20px;
+}
+
+.calendar-heading {
+  font-size: 24px;
+}
+
+.calendar {
+  margin-top: 10px;
+}
+
+.event-list {
+  margin-top: 20px;
+}
+
+.event {
+  margin-bottom: 10px;
+}
+
+.event-title {
+  font-weight: bold;
+}
+
+/* EventManagement.css */
+.event-management {
+  margin: 20px;
+}
+
+.event-management-heading {
+  font-size: 24px;
+}
+
+.event-form {
+  margin-top: 10px;
+}
+
+.event-input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.event-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* CustomCalendar.css */
+.react-calendar {
+  max-width: 1300px; /* Adjust the max-width of the calendar */
+  height: 500px;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+.react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  background-color: #007bff; /* Header cell background color */
+  color: #fff; /* Header cell text color */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+
+/* Styling for specific days if needed */
+.react-calendar__month-view__weekdays__weekday:nth-child(odd) {
+  background-color: #0056b3; /* Alternate background color for odd days */
+}
+
+
+.react-calendar__tile {
+  width: 100%; /* Adjust the width of each cell */
+  height: 90px; /* Adjust the height of each cell */
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+.react-calendar__tile--active {
+  background: #f0f0f0;
+}
+
+.react-calendar__tile--now {
+  background: #00aaff;
+}
+
+.react-calendar__tile--hasActive {
+  background: #f0f0f0;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #e0e0e0;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #c0c0c0;
+}
+
+.react-calendar__tile--neighboringMonth {
+  opacity: 0.5; /* Lower the opacity of dates not part of the current month */
+}
+
+/* Add Event */
+
+/* AddEventModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+}
+
+.event-input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.event-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Nav Bar */ 
+
+/* NavigationBar.css */
+.search-bar{
+  width: 300px;
+}
+.navigation-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 90px;
+}
+
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-item {
+  margin-right: 20px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navigation-item a:hover {
+  background-color: #555;
+}
